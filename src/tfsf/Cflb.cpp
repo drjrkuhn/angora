@@ -28,7 +28,7 @@ Copyright (C) 2006-2012  Ilker R. Capoglu
 #include "Cpw_ml.h"
 
 //Uses TinyVector operations
-#include <blitz/tinyvec-et.h>
+//removed JK #include <blitz/tinyvec-et.h>
 
 //definition of Cwf needed
 #include "waveforms/Cwf.h"

@@ -51,4 +51,7 @@ using namespace std;
 //the minimum representable integer number
 #define LIBSTD_INT_MIN numeric_limits<int>::min()
 
+//fix conflict between rank and std::rank in <type_traits>
+#define rank mpi_rank
+
 #endif

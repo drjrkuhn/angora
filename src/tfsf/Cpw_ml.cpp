@@ -32,7 +32,7 @@ Copyright (C) 2006-2012  Ilker R. Capoglu
 #include "waveforms/Cwf_shared_ptr.h"
 
 //Uses TinyVector operations
-#include <blitz/tinyvec-et.h>
+//removed JK #include <blitz/tinyvec-et.h>
 
 //Use MPI if not disabled
 #ifndef MPI_DISABLE

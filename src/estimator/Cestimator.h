@@ -27,7 +27,7 @@ Copyright (C) 2006-2012  Ilker R. Capoglu
 
 #include <fstream>
 
-#ifdef _WIN32
+#if defined(_WIN32) || defined(__APPLE__)
 #include <sys/types.h>
 #include <sys/timeb.h>
 #define FDTD_TIMEVAR timeb

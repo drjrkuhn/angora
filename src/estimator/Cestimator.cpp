@@ -23,7 +23,7 @@ Copyright (C) 2006-2012  Ilker R. Capoglu
 
 #include "Cestimator.h"
 
-#ifdef _WIN32
+#if defined(_WIN32) || defined(__APPLE__)
 #define FDTD_GETTIME ftime
 #define FDTD_SEC time
 #define FDTD_FRACSEC millitm
