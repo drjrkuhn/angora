@@ -321,7 +321,8 @@ return( y );
 
 
 
-double gamma(x)
+// remove conflict with math.h version of gamma
+double sf_gamma(x)
 double x;
 {
 double p, q, z;

@@ -28,7 +28,10 @@ Copyright (C) 2006-2012  Ilker R. Capoglu
 #include "angora_excp.h"
 
 //for the gamma function in the cephes math library
+extern "C" {
 #include "specfun/gamma/gamma.h"
+}
+#define GAMMA(x) sf_gamma(x)
 
 //for reading a material region from a file
 #include "matfile.h"
@@ -266,7 +269,7 @@ void PlaceWMCorrRandomBlock
 								 pow2(2*M_PI/even_A*(-floor(even_A/2.0)+i)));
 					pow_spec_array(k,j,i) = NormalRV.random()*
 								sqrt(C*B*even_A*  //each frequency is independent with power (C*B*even_A*powerspectrum(k_ijk))
-								pow2(std_dev_norm)*(8*pow(M_PI,1.5)*pow((RandMatType)lc_cell,(RandMatType)3)*gamma(m)/(abs(gamma(m-1.5))*pow((RandMatType)(1+pow2(k_ijk)*pow2(lc_cell)),(RandMatType)m)))); //power spectral density of the Whittle-Matern-correlated medium
+								pow2(std_dev_norm)*(8*pow(M_PI,1.5)*pow((RandMatType)lc_cell,(RandMatType)3)*GAMMA(m)/(abs(GAMMA(m-1.5))*pow((RandMatType)(1+pow2(k_ijk)*pow2(lc_cell)),(RandMatType)m)))); //power spectral density of the Whittle-Matern-correlated medium
 						//extra casts are needed for some versions of gcc
 				}
 			}
@@ -394,7 +397,7 @@ void PlaceWMCorrRandomBlock
 									 pow2(2*M_PI/C*(-floor(C/2.0)+k)));
 						last_dim(k) = NormalRV.random()*
 									sqrt(A*B*C*  //each frequency is independent with power (A*B*C*powerspectrum(k_ijk))
-									pow2(std_dev_norm)*(8*pow(M_PI,1.5)*pow((RandMatType)lc_cell,(RandMatType)3)*gamma(m)/(abs(gamma(m-1.5))*pow((RandMatType)(1+pow2(k_ijk)*pow2(lc_cell)),(RandMatType)m)))); //power spectral density
+									pow2(std_dev_norm)*(8*pow(M_PI,1.5)*pow((RandMatType)lc_cell,(RandMatType)3)*GAMMA(m)/(abs(GAMMA(m-1.5))*pow((RandMatType)(1+pow2(k_ijk)*pow2(lc_cell)),(RandMatType)m)))); //power spectral density
 							//extra casts are needed for some versions of gcc
 					}
 					//bring the zero-frequency component back to the beginning
@@ -469,7 +472,7 @@ void PlaceWMCorrRandomBlock
 		//finally, close temporary-file stream for the random-material file
 		fclose(randfilestream);
 	}
-/** Random medium written into temporary file (by node 0).
+/** Random medium written into temporary file (by node 0). **/
 /*******************************************************************************************************************/
 
 #ifndef MPI_DISABLE

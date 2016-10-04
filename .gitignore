@@ -1,3 +1,6 @@
+# macOS / OSX
+**/.DS_Store
+
 # http://www.gnu.org/software/automake
 
 **/Makefile
@@ -22,4 +25,47 @@ missing
 stamp-h1
 config.*
 libtool
+ltmain.sh
+texinfo.tex
+INSTALL
 *~
+
+# C / C++
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# ignore the compiled executable
+angora
+angora.*
+src/config/createcfg
+src/config/createcfg.*
+src/config/valid_settings.cc
