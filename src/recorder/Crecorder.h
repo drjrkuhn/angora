@@ -41,11 +41,11 @@ class Crec;
 class Crecorder
 {//generic recorder class (may include movie or field value recorders)
  public:
-	 int AddMovieRecorder(const string& mysection, const int& Pos,
+	 void AddMovieRecorder(const string& mysection, const int& Pos,
 		const string& mycomponent, const string& myscale, const string& myrecordingtype, const string& MovieFileName,const bool& OnlyRecordsGeometry);
-	 int AddLineRecorder(const string& myorientation, const int& x1Pos, const int& x2Pos,
+	 void AddLineRecorder(const string& myorientation, const int& x1Pos, const int& x2Pos,
 		const string& mycomponent, const string& myscale, const string& LineFileName);
-	 int AddFieldValueRecorder(const int& xPos, const int& yPos, const int& zPos,
+	 void AddFieldValueRecorder(const int& xPos, const int& yPos, const int& zPos,
 		const string& mycomponent, const string& myscale, const string& FieldValueFileName);
 
 	 //record everything that needs to be recorded at the current time step

@@ -35,7 +35,7 @@ class ImgDataType;
 class Cimgs
 {
  public:
-	 int AddOpticalImage(const ImgDataType& MyData,
+	 void AddOpticalImage(const ImgDataType& MyData,
 		 const string& InputFarFieldFileName = "");	//adds an optical image
 
 	 void UpdateFarField(const int& n);		//Update far-field arrays

@@ -111,60 +111,72 @@ void read_nffft_td(Cnffft_td &NFFFT_td, const Config& fdtdconfig, const Config& 
 				double nffft_back_margin_x,nffft_front_margin_x,nffft_left_margin_y,nffft_right_margin_y,nffft_lower_margin_z,nffft_upper_margin_z;
 				bool given_in_meters;
 //				try{
-					if (read_optional_length_from_group<double>(TimeDomainTransformersettings,"nffft_back_margin_x",nffft_back_margin_x,given_in_meters))
-					if (given_in_meters)
-					{
-						TimeDomainTrData.NFFFTMarginBackX = (int)round(nffft_back_margin_x/dx);
-					}
-					else
-					{
-						TimeDomainTrData.NFFFTMarginBackX = (int)round(nffft_back_margin_x);
-					}
+					if (read_optional_length_from_group<double>(TimeDomainTransformersettings,"nffft_back_margin_x",nffft_back_margin_x,given_in_meters)) 
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginBackX = (int)round(nffft_back_margin_x/dx);
+                                            }
+                                            else
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginBackX = (int)round(nffft_back_margin_x);
+                                            }
+                                        }
 					if (read_optional_length_from_group<double>(TimeDomainTransformersettings,"nffft_front_margin_x",nffft_front_margin_x,given_in_meters))
-					if (given_in_meters)
-					{
-						TimeDomainTrData.NFFFTMarginFrontX = (int)round(nffft_front_margin_x/dx);
-					}
-					else
-					{
-						TimeDomainTrData.NFFFTMarginFrontX = (int)round(nffft_front_margin_x);
-					}
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginFrontX = (int)round(nffft_front_margin_x/dx);
+                                            }
+                                            else
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginFrontX = (int)round(nffft_front_margin_x);
+                                            }
+                                        }
 					if (read_optional_length_from_group<double>(TimeDomainTransformersettings,"nffft_left_margin_y",nffft_left_margin_y,given_in_meters))
-					if (given_in_meters)
-					{
-						TimeDomainTrData.NFFFTMarginLeftY = (int)round(nffft_left_margin_y/dx);
-					}
-					else
-					{
-						TimeDomainTrData.NFFFTMarginLeftY = (int)round(nffft_left_margin_y);
-					}
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginLeftY = (int)round(nffft_left_margin_y/dx);
+                                            }
+                                            else
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginLeftY = (int)round(nffft_left_margin_y);
+                                            }
+                                        }
 					if (read_optional_length_from_group<double>(TimeDomainTransformersettings,"nffft_right_margin_y",nffft_right_margin_y,given_in_meters))
-					if (given_in_meters)
-					{
-						TimeDomainTrData.NFFFTMarginRightY = (int)round(nffft_right_margin_y/dx);
-					}
-					else
-					{
-						TimeDomainTrData.NFFFTMarginRightY = (int)round(nffft_right_margin_y);
-					}
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginRightY = (int)round(nffft_right_margin_y/dx);
+                                            }
+                                            else
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginRightY = (int)round(nffft_right_margin_y);
+                                            }
+                                        }
 					if (read_optional_length_from_group<double>(TimeDomainTransformersettings,"nffft_lower_margin_z",nffft_lower_margin_z,given_in_meters))
-					if (given_in_meters)
-					{
-						TimeDomainTrData.NFFFTMarginLowerZ = (int)round(nffft_lower_margin_z/dx);
-					}
-					else
-					{
-						TimeDomainTrData.NFFFTMarginLowerZ = (int)round(nffft_lower_margin_z);
-					}
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginLowerZ = (int)round(nffft_lower_margin_z/dx);
+                                            }
+                                            else
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginLowerZ = (int)round(nffft_lower_margin_z);
+                                            }
+                                        }
 					if (read_optional_length_from_group<double>(TimeDomainTransformersettings,"nffft_upper_margin_z",nffft_upper_margin_z,given_in_meters))
-					if (given_in_meters)
-					{
-						TimeDomainTrData.NFFFTMarginUpperZ = (int)round(nffft_upper_margin_z/dx);
-					}
-					else
-					{
-						TimeDomainTrData.NFFFTMarginUpperZ = (int)round(nffft_upper_margin_z);
-					}
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginUpperZ = (int)round(nffft_upper_margin_z/dx);
+                                            }
+                                            else
+                                            {
+                                                    TimeDomainTrData.NFFFTMarginUpperZ = (int)round(nffft_upper_margin_z);
+                                            }
+                                        }
 //				}
 //				/** TODO: Better organize the defaults in TrDataType_td **/
 //				catch (AngoraSettingNotFoundException&)
@@ -174,32 +186,38 @@ void read_nffft_td(Cnffft_td &NFFFT_td, const Config& fdtdconfig, const Config& 
 				double far_field_origin_x,far_field_origin_y,far_field_origin_z;
 //				try{
 					if (read_optional_length_from_group<double>(TimeDomainTransformersettings,"far_field_origin_x",far_field_origin_x,given_in_meters))
-					if (given_in_meters)
 					{
-						TimeDomainTrData.NFFFTOriginX = far_field_origin_x/dx + OriginX;  //these are grid cell indices, not coordinates
-					}
-					else
-					{
-						TimeDomainTrData.NFFFTOriginX = far_field_origin_x + OriginX;  //these are grid cell indices, not coordinates
-					}
+                                            if (given_in_meters)
+                                            {
+                                                    TimeDomainTrData.NFFFTOriginX = far_field_origin_x/dx + OriginX;  //these are grid cell indices, not coordinates
+                                            }
+                                            else
+                                            {
+                                                    TimeDomainTrData.NFFFTOriginX = far_field_origin_x + OriginX;  //these are grid cell indices, not coordinates
+                                            }
+                                        }
 					if (read_optional_length_from_group<double>(TimeDomainTransformersettings,"far_field_origin_y",far_field_origin_y,given_in_meters))
-					if (given_in_meters)
 					{
-						TimeDomainTrData.NFFFTOriginY = far_field_origin_y/dx + OriginY;  //these are grid cell indices, not coordinates
-					}
-					else
-					{
-						TimeDomainTrData.NFFFTOriginY = far_field_origin_y + OriginY;  //these are grid cell indices, not coordinates
-					}
+                                            if (given_in_meters)
+                                            {
+                                                    TimeDomainTrData.NFFFTOriginY = far_field_origin_y/dx + OriginY;  //these are grid cell indices, not coordinates
+                                            }
+                                            else
+                                            {
+                                                    TimeDomainTrData.NFFFTOriginY = far_field_origin_y + OriginY;  //these are grid cell indices, not coordinates
+                                            }
+                                        }
 					if (read_optional_length_from_group<double>(TimeDomainTransformersettings,"far_field_origin_z",far_field_origin_z,given_in_meters))
-					if (given_in_meters)
 					{
-						TimeDomainTrData.NFFFTOriginZ = far_field_origin_z/dx + OriginZ;  //these are grid cell indices, not coordinates
-					}
-					else
-					{
-						TimeDomainTrData.NFFFTOriginZ = far_field_origin_z + OriginZ;  //these are grid cell indices, not coordinates
-					}
+                                            if (given_in_meters)
+                                            {
+                                                    TimeDomainTrData.NFFFTOriginZ = far_field_origin_z/dx + OriginZ;  //these are grid cell indices, not coordinates
+                                            }
+                                            else
+                                            {
+                                                    TimeDomainTrData.NFFFTOriginZ = far_field_origin_z + OriginZ;  //these are grid cell indices, not coordinates
+                                            }
+                                        }
 //				}
 //				/** TODO: Better organize the defaults in TrDataType_td **/
 //				catch (AngoraSettingNotFoundException&)

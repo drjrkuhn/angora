@@ -328,59 +328,71 @@ void read_imaging(Cimgs &OpticalImages, const Config& fdtdconfig, const Config& 
 				bool given_in_meters;
 //				try{
 					if (read_optional_length_from_group<double>(Imagesettings,"nffft_back_margin_x",nffft_back_margin_x,given_in_meters))
-					if (given_in_meters)
-					{
-						ImgData.NFFFTMarginBackX = (int)round(nffft_back_margin_x/dx);
-					}
-					else
-					{
-						ImgData.NFFFTMarginBackX = (int)round(nffft_back_margin_x);
-					}
-					if (read_optional_length_from_group<double>(Imagesettings,"nffft_front_margin_x",nffft_front_margin_x,given_in_meters))
-					if (given_in_meters)
-					{
-						ImgData.NFFFTMarginFrontX = (int)round(nffft_front_margin_x/dx);
-					}
-					else
-					{
-						ImgData.NFFFTMarginFrontX = (int)round(nffft_front_margin_x);
-					}
-					if (read_optional_length_from_group<double>(Imagesettings,"nffft_left_margin_y",nffft_left_margin_y,given_in_meters))
-					if (given_in_meters)
-					{
-						ImgData.NFFFTMarginLeftY = (int)round(nffft_left_margin_y/dx);
-					}
-					else
-					{
-						ImgData.NFFFTMarginLeftY = (int)round(nffft_left_margin_y);
-					}
-					if (read_optional_length_from_group<double>(Imagesettings,"nffft_right_margin_y",nffft_right_margin_y,given_in_meters))
-					if (given_in_meters)
-					{
-						ImgData.NFFFTMarginRightY = (int)round(nffft_right_margin_y/dx);
-					}
-					else
-					{
-						ImgData.NFFFTMarginRightY = (int)round(nffft_right_margin_y);
-					}
-					if (read_optional_length_from_group<double>(Imagesettings,"nffft_lower_margin_z",nffft_lower_margin_z,given_in_meters))
-					if (given_in_meters)
-					{
-						ImgData.NFFFTMarginLowerZ = (int)round(nffft_lower_margin_z/dx);
-					}
-					else
-					{
-						ImgData.NFFFTMarginLowerZ = (int)round(nffft_lower_margin_z);
-					}
-					if (read_optional_length_from_group<double>(Imagesettings,"nffft_upper_margin_z",nffft_upper_margin_z,given_in_meters))
-					if (given_in_meters)
-					{
-						ImgData.NFFFTMarginUpperZ = (int)round(nffft_upper_margin_z/dx);
-					}
-					else
-					{
-						ImgData.NFFFTMarginUpperZ = (int)round(nffft_upper_margin_z);
-					}
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    ImgData.NFFFTMarginBackX = (int)round(nffft_back_margin_x/dx);
+                                            }
+                                            else
+                                            {
+                                                    ImgData.NFFFTMarginBackX = (int)round(nffft_back_margin_x);
+                                            }
+                                        }
+					if (read_optional_length_from_group<double>(Imagesettings,"nffft_front_margin_x",nffft_front_margin_x,given_in_meters)) 
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    ImgData.NFFFTMarginFrontX = (int)round(nffft_front_margin_x/dx);
+                                            }
+                                            else
+                                            {
+                                                    ImgData.NFFFTMarginFrontX = (int)round(nffft_front_margin_x);
+                                            }
+                                        }
+					if (read_optional_length_from_group<double>(Imagesettings,"nffft_left_margin_y",nffft_left_margin_y,given_in_meters)) 
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    ImgData.NFFFTMarginLeftY = (int)round(nffft_left_margin_y/dx);
+                                            }
+                                            else
+                                            {
+                                                    ImgData.NFFFTMarginLeftY = (int)round(nffft_left_margin_y);
+                                            }
+                                        }
+					if (read_optional_length_from_group<double>(Imagesettings,"nffft_right_margin_y",nffft_right_margin_y,given_in_meters)) 
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    ImgData.NFFFTMarginRightY = (int)round(nffft_right_margin_y/dx);
+                                            }
+                                            else
+                                            {
+                                                    ImgData.NFFFTMarginRightY = (int)round(nffft_right_margin_y);
+                                            }
+                                        }
+					if (read_optional_length_from_group<double>(Imagesettings,"nffft_lower_margin_z",nffft_lower_margin_z,given_in_meters)) 
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    ImgData.NFFFTMarginLowerZ = (int)round(nffft_lower_margin_z/dx);
+                                            }
+                                            else
+                                            {
+                                                    ImgData.NFFFTMarginLowerZ = (int)round(nffft_lower_margin_z);
+                                            }
+                                        }
+					if (read_optional_length_from_group<double>(Imagesettings,"nffft_upper_margin_z",nffft_upper_margin_z,given_in_meters)) 
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    ImgData.NFFFTMarginUpperZ = (int)round(nffft_upper_margin_z/dx);
+                                            }
+                                            else
+                                            {
+                                                    ImgData.NFFFTMarginUpperZ = (int)round(nffft_upper_margin_z);
+                                            }
+                                        }
 //				}
 //				/** TODO: Better organize the defaults in ImgDataType **/
 //				catch (AngoraSettingNotFoundException&)
@@ -390,33 +402,39 @@ void read_imaging(Cimgs &OpticalImages, const Config& fdtdconfig, const Config& 
 				//read image origin
 				double image_origin_x,image_origin_y,image_origin_z;
 //				try{
-					if (read_optional_length_from_group<double>(Imagesettings,"image_origin_x",image_origin_x,given_in_meters))
-					if (given_in_meters)
-					{
-						ImgData.ImgOriginX = image_origin_x/dx + OriginX;  //these are grid cell indices, not coordinates
-					}
-					else
-					{
-						ImgData.ImgOriginX = image_origin_x + OriginX;  //these are grid cell indices, not coordinates
-					}
-					if (read_optional_length_from_group<double>(Imagesettings,"image_origin_y",image_origin_y,given_in_meters))
-					if (given_in_meters)
-					{
-						ImgData.ImgOriginY = image_origin_y/dx + OriginY;  //these are grid cell indices, not coordinates
-					}
-					else
-					{
-						ImgData.ImgOriginY = image_origin_y + OriginY;  //these are grid cell indices, not coordinates
-					}
-					if (read_optional_length_from_group<double>(Imagesettings,"image_origin_z",image_origin_z,given_in_meters))
-					if (given_in_meters)
-					{
-						ImgData.ImgOriginZ = image_origin_z/dx + OriginZ;  //these are grid cell indices, not coordinates
-					}
-					else
-					{
-						ImgData.ImgOriginZ = image_origin_z + OriginZ;  //these are grid cell indices, not coordinates
-					}
+					if (read_optional_length_from_group<double>(Imagesettings,"image_origin_x",image_origin_x,given_in_meters)) 
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    ImgData.ImgOriginX = image_origin_x/dx + OriginX;  //these are grid cell indices, not coordinates
+                                            }
+                                            else
+                                            {
+                                                    ImgData.ImgOriginX = image_origin_x + OriginX;  //these are grid cell indices, not coordinates
+                                            }
+                                        }
+					if (read_optional_length_from_group<double>(Imagesettings,"image_origin_y",image_origin_y,given_in_meters)) 
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    ImgData.ImgOriginY = image_origin_y/dx + OriginY;  //these are grid cell indices, not coordinates
+                                            }
+                                            else
+                                            {
+                                                    ImgData.ImgOriginY = image_origin_y + OriginY;  //these are grid cell indices, not coordinates
+                                            }
+                                        }
+					if (read_optional_length_from_group<double>(Imagesettings,"image_origin_z",image_origin_z,given_in_meters)) 
+                                        {
+                                            if (given_in_meters)
+                                            {
+                                                    ImgData.ImgOriginZ = image_origin_z/dx + OriginZ;  //these are grid cell indices, not coordinates
+                                            }
+                                            else
+                                            {
+                                                    ImgData.ImgOriginZ = image_origin_z + OriginZ;  //these are grid cell indices, not coordinates
+                                            }
+                                        }
 //				}
 //				/** TODO: Better organize the defaults in TrDataType_pd **/
 //				catch (AngoraSettingNotFoundException&)

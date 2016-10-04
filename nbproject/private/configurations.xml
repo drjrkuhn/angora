@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name=".deps">
+      </df>
+      <df name="autom4te.cache">
+      </df>
+      <df name="cfg">
+      </df>
+      <df name="doc">
+      </df>
+      <df name="m4">
+      </df>
+      <df name="matlab">
+        <in>angora_fieldvalue.m</in>
+        <in>angora_line.m</in>
+        <in>angora_movie.m</in>
+        <in>hdf5_exists.m</in>
+        <in>hdf5_read.m</in>
+        <in>mod_gaussian_wf.m</in>
+      </df>
+      <df name="src">
+        <df name=".deps">
+        </df>
+        <df name="absorb">
+          <df name=".deps">
+          </df>
+          <in>CPML.cpp</in>
+          <in>CPML.h</in>
+          <in>Cabsorb.cpp</in>
+          <in>Cabsorb.h</in>
+        </df>
+        <df name="config">
+          <df name=".deps">
+          </df>
+          <in>cfg_utils.cpp</in>
+          <in>cfg_utils.h</in>
+          <in>createcfg.cpp</in>
+          <in>valid_settings.cpp</in>
+          <in>valid_settings.h</in>
+        </df>
+        <df name="estimator">
+          <df name=".deps">
+          </df>
+          <in>Cestimator.cpp</in>
+          <in>Cestimator.h</in>
+          <in>read_logging_data.cpp</in>
+          <in>read_logging_data.h</in>
+        </df>
+        <df name="fft">
+          <df name=".deps">
+          </df>
+          <df name="kiss_D_fft">
+            <df name=".deps">
+            </df>
+            <in>_kiss_D_fft_guts.h</in>
+            <in>kiss_D_fft.c</in>
+            <in>kiss_D_fft.h</in>
+            <in>kiss_D_fftnd.c</in>
+            <in>kiss_D_fftnd.h</in>
+            <in>kiss_D_fftndr.c</in>
+            <in>kiss_D_fftndr.h</in>
+            <in>kiss_D_fftr.c</in>
+            <in>kiss_D_fftr.h</in>
+          </df>
+          <df name="kiss_F_fft">
+            <df name=".deps">
+            </df>
+            <in>_kiss_F_fft_guts.h</in>
+            <in>kiss_F_fft.c</in>
+            <in>kiss_F_fft.h</in>
+            <in>kiss_F_fftnd.c</in>
+            <in>kiss_F_fftnd.h</in>
+            <in>kiss_F_fftndr.c</in>
+            <in>kiss_F_fftndr.h</in>
+            <in>kiss_F_fftr.c</in>
+            <in>kiss_F_fftr.h</in>
+          </df>
+          <in>fft.h</in>
+          <in>fft_d.cpp</in>
+          <in>fft_f.cpp</in>
+        </df>
+        <df name="imaging">
+          <df name=".deps">
+          </df>
+          <in>Cimg.cpp</in>
+          <in>Cimg.h</in>
+          <in>Cimg_pp.cpp</in>
+          <in>Cimgs.cpp</in>
+          <in>Cimgs.h</in>
+          <in>read_imaging.cpp</in>
+          <in>read_imaging.h</in>
+        </df>
+        <df name="main">
+          <df name=".deps">
+          </df>
+          <df name=".libs">
+          </df>
+          <in>init.cpp</in>
+          <in>init.h</in>
+          <in>initgeom.cpp</in>
+          <in>initgeom.h</in>
+          <in>matfile.h</in>
+          <in>parallel.cpp</in>
+          <in>parallel.h</in>
+          <in>place_obj.cpp</in>
+          <in>place_obj.h</in>
+          <in>placegeom.cpp</in>
+          <in>placegeom.h</in>
+          <in>random.h</in>
+          <in>read_basedirs.cpp</in>
+          <in>read_basedirs.h</in>
+          <in>read_geom.cpp</in>
+          <in>read_geom.h</in>
+          <in>read_global.cpp</in>
+          <in>read_global.h</in>
+          <in>read_multgridinfo.cpp</in>
+          <in>read_multgridinfo.h</in>
+        </df>
+        <df name="material">
+          <df name=".deps">
+          </df>
+          <in>Cmat.cpp</in>
+          <in>Cmat.h</in>
+          <in>Cmat_excp.h</in>
+          <in>Cmat_types.h</in>
+          <in>Cmats.cpp</in>
+          <in>Cmats.h</in>
+          <in>Cmats_excp.h</in>
+          <in>read_mat.cpp</in>
+          <in>read_mat.h</in>
+        </df>
+        <df name="nffft">
+          <df name=".deps">
+          </df>
+          <df name="pd">
+            <df name=".deps">
+            </df>
+            <in>Cnffft_pd.cpp</in>
+            <in>Cnffft_pd.h</in>
+            <in>Ctr_pd.cpp</in>
+            <in>Ctr_pd.h</in>
+            <in>Ctr_pd_2l.cpp</in>
+            <in>Ctr_pd_2l.h</in>
+            <in>Ctr_pd_2l_TL.cpp</in>
+            <in>Ctr_pd_2l_pp.cpp</in>
+            <in>Ctr_pd_3l.cpp</in>
+            <in>Ctr_pd_3l.h</in>
+            <in>Ctr_pd_3l_TL.cpp</in>
+            <in>Ctr_pd_3l_pp.cpp</in>
+            <in>Ctr_pd_fs.cpp</in>
+            <in>Ctr_pd_fs.h</in>
+            <in>Ctr_pd_fs_pp.cpp</in>
+            <in>Ctr_pd_ml.cpp</in>
+            <in>Ctr_pd_ml.h</in>
+            <in>Ctr_pd_ml_TL.cpp</in>
+            <in>Ctr_pd_ml_pp.cpp</in>
+            <in>Ctr_pd_pp.cpp</in>
+            <in>Ctr_pd_upd.cpp</in>
+          </df>
+          <df name="td">
+            <df name=".deps">
+            </df>
+            <in>Cnffft_td.cpp</in>
+            <in>Cnffft_td.h</in>
+            <in>Ctr_td.cpp</in>
+            <in>Ctr_td.h</in>
+            <in>Ctr_td_3l.cpp</in>
+            <in>Ctr_td_3l.h</in>
+            <in>Ctr_td_3l_TL.cpp</in>
+            <in>Ctr_td_3l_pp.cpp</in>
+            <in>Ctr_td_3l_upd.cpp</in>
+            <in>Ctr_td_fs.cpp</in>
+            <in>Ctr_td_fs.h</in>
+            <in>Ctr_td_fs_pp.cpp</in>
+            <in>Ctr_td_fs_upd.cpp</in>
+          </df>
+          <in>read_nffft_pd.cpp</in>
+          <in>read_nffft_pd.h</in>
+          <in>read_nffft_td.cpp</in>
+          <in>read_nffft_td.h</in>
+        </df>
+        <df name="pointsources">
+          <df name=".deps">
+          </df>
+          <in>Cpointsources.cpp</in>
+          <in>Cpointsources.h</in>
+          <in>read_pointsources.cpp</in>
+          <in>read_pointsources.h</in>
+        </df>
+        <df name="recorder">
+          <df name=".deps">
+          </df>
+          <in>Crec.h</in>
+          <in>Crecorder.cpp</in>
+          <in>Crecorder.h</in>
+          <in>Crecorder_fieldvalue.cpp</in>
+          <in>Crecorder_fieldvalue.h</in>
+          <in>Crecorder_line.cpp</in>
+          <in>Crecorder_line.h</in>
+          <in>Crecorder_movie.cpp</in>
+          <in>Crecorder_movie.h</in>
+          <in>read_recorder.cpp</in>
+          <in>read_recorder.h</in>
+        </df>
+        <df name="shape">
+          <df name=".deps">
+          </df>
+          <in>Cshape.cpp</in>
+          <in>Cshape.h</in>
+          <in>Cshape_excp.h</in>
+          <in>Cshape_shared_ptr.h</in>
+          <in>Cshapes.cpp</in>
+          <in>Cshapes.h</in>
+          <in>Cshapes_excp.h</in>
+          <in>read_shapes.cpp</in>
+          <in>read_shapes.h</in>
+        </df>
+        <df name="specfun">
+          <df name="gamma">
+            <df name=".deps">
+            </df>
+            <in>const.c</in>
+            <in>gamma.c</in>
+            <in>gamma.h</in>
+            <in>isnan.c</in>
+            <in>mconf.h</in>
+            <in>mtherr.c</in>
+            <in>polevl.c</in>
+          </df>
+          <df name="hermite">
+            <df name=".deps">
+            </df>
+            <in>hermite.cpp</in>
+            <in>hermite.h</in>
+          </df>
+        </df>
+        <df name="tfsf">
+          <df name=".deps">
+          </df>
+          <df name="evan">
+            <df name=".deps">
+            </df>
+            <in>f2c.h</in>
+            <in>z_div.c</in>
+            <in>zgtsv.c</in>
+          </df>
+          <df name="glquad">
+            <df name=".deps">
+            </df>
+            <in>gaussquad.cpp</in>
+            <in>gaussquad.h</in>
+          </df>
+          <in>Cflb.cpp</in>
+          <in>Cflb.h</in>
+          <in>Cpw.cpp</in>
+          <in>Cpw.h</in>
+          <in>Cpw_2l.cpp</in>
+          <in>Cpw_2l.h</in>
+          <in>Cpw_2l_inc.cpp</in>
+          <in>Cpw_fs.cpp</in>
+          <in>Cpw_fs.h</in>
+          <in>Cpw_fs_inc.cpp</in>
+          <in>Cpw_fs_upd.cpp</in>
+          <in>Cpw_ml.cpp</in>
+          <in>Cpw_ml.h</in>
+          <in>Cpw_ml_inc.cpp</in>
+          <in>Cpw_ml_upd.cpp</in>
+          <in>Ctfsf.cpp</in>
+          <in>Ctfsf.h</in>
+          <in>cubature.cc</in>
+          <in>read_tfsf.cpp</in>
+          <in>read_tfsf.h</in>
+        </df>
+        <df name="update">
+          <df name=".deps">
+          </df>
+          <in>update.cpp</in>
+          <in>update.h</in>
+          <in>update_full.cpp</in>
+          <in>update_full.h</in>
+          <in>update_no_dispersion.cpp</in>
+          <in>update_no_dispersion.h</in>
+        </df>
+        <df name="waveforms">
+          <df name=".deps">
+          </df>
+          <in>Cwf.h</in>
+          <in>Cwf_excp.h</in>
+          <in>Cwf_gauss.cpp</in>
+          <in>Cwf_gauss.h</in>
+          <in>Cwf_shared_ptr.h</in>
+          <in>Cwfs.cpp</in>
+          <in>Cwfs.h</in>
+          <in>Cwfs_excp.h</in>
+          <in>read_wfs.cpp</in>
+          <in>read_wfs.h</in>
+        </df>
+        <in>angora.cpp</in>
+        <in>angora_excp.h</in>
+        <in>check_dispersion.cpp</in>
+        <in>check_dispersion.h</in>
+        <in>constants.h</in>
+        <in>float_comp.h</in>
+        <in>globals.cpp</in>
+        <in>globals.h</in>
+        <in>headers.h</in>
+        <in>path_utils.cpp</in>
+        <in>path_utils.h</in>
+        <in>time_axis.cpp</in>
+        <in>time_axis.h</in>
+      </df>
+      <in>config.h</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

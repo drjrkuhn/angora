@@ -51,6 +51,7 @@
 */
 
 #include "f2c.h"
+#include <math.h>
 
 int zgtsv_(int *n, int *nrhs, 
 	double *dl_r, double *dl_i, 
@@ -183,9 +184,9 @@ int zgtsv_(int *n, int *nrhs,
 	} else /* if(complicated condition) */ {
 	    i__2 = k;
 	    i__3 = k;
-	    if ((d__1 = d__r[i__2], abs(d__1)) + (d__2 = d__i[k], 
-		    abs(d__2)) >= (d__3 = dl_r[i__3], abs(d__3)) + (d__4 = 
-		    dl_i[k], abs(d__4))) {
+	    if ((d__1 = d__r[i__2], fabs(d__1)) + (d__2 = d__i[k], 
+		    fabs(d__2)) >= (d__3 = dl_r[i__3], fabs(d__3)) + (d__4 = 
+		    dl_i[k], fabs(d__4))) {
 
 /*           No row interchange required */
 

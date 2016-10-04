@@ -108,59 +108,71 @@ void read_tfsf(Ctfsf &TFSF, const Config& fdtdconfig, const Config& validsetting
 						bool given_in_meters;
 //						try{
 							if (read_optional_length_from_group<double>(PWsettings,"tfsf_back_margin_x",tfsf_back_margin_x,given_in_meters))
-							if (given_in_meters)
 							{
-								PWData.PWMarginBackX = (int)round(tfsf_back_margin_x/dx);
-							}
-							else
-							{
-								PWData.PWMarginBackX = (int)round(tfsf_back_margin_x);
-							}
+                                                                if (given_in_meters)
+                                                            {
+                                                                    PWData.PWMarginBackX = (int)round(tfsf_back_margin_x/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    PWData.PWMarginBackX = (int)round(tfsf_back_margin_x);
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(PWsettings,"tfsf_front_margin_x",tfsf_front_margin_x,given_in_meters))
-							if (given_in_meters)
 							{
-								PWData.PWMarginFrontX = (int)round(tfsf_front_margin_x/dx);
-							}
-							else
-							{
-								PWData.PWMarginFrontX = (int)round(tfsf_front_margin_x);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    PWData.PWMarginFrontX = (int)round(tfsf_front_margin_x/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    PWData.PWMarginFrontX = (int)round(tfsf_front_margin_x);
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(PWsettings,"tfsf_left_margin_y",tfsf_left_margin_y,given_in_meters))
-							if (given_in_meters)
 							{
-								PWData.PWMarginLeftY = (int)round(tfsf_left_margin_y/dx);
-							}
-							else
-							{
-								PWData.PWMarginLeftY = (int)round(tfsf_left_margin_y);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    PWData.PWMarginLeftY = (int)round(tfsf_left_margin_y/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    PWData.PWMarginLeftY = (int)round(tfsf_left_margin_y);
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(PWsettings,"tfsf_right_margin_y",tfsf_right_margin_y,given_in_meters))
-							if (given_in_meters)
 							{
-								PWData.PWMarginRightY = (int)round(tfsf_right_margin_y/dx);
-							}
-							else
-							{
-								PWData.PWMarginRightY = (int)round(tfsf_right_margin_y);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    PWData.PWMarginRightY = (int)round(tfsf_right_margin_y/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    PWData.PWMarginRightY = (int)round(tfsf_right_margin_y);
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(PWsettings,"tfsf_lower_margin_z",tfsf_lower_margin_z,given_in_meters))
-							if (given_in_meters)
 							{
-								PWData.PWMarginLowerZ = (int)round(tfsf_lower_margin_z/dx);
-							}
-							else
-							{
-								PWData.PWMarginLowerZ = (int)round(tfsf_lower_margin_z);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    PWData.PWMarginLowerZ = (int)round(tfsf_lower_margin_z/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    PWData.PWMarginLowerZ = (int)round(tfsf_lower_margin_z);
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(PWsettings,"tfsf_upper_margin_z",tfsf_upper_margin_z,given_in_meters))
-							if (given_in_meters)
 							{
-								PWData.PWMarginUpperZ = (int)round(tfsf_upper_margin_z/dx);
-							}
-							else
-							{
-								PWData.PWMarginUpperZ = (int)round(tfsf_upper_margin_z);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    PWData.PWMarginUpperZ = (int)round(tfsf_upper_margin_z/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    PWData.PWMarginUpperZ = (int)round(tfsf_upper_margin_z);
+                                                            }
+                                                        }
 //						}
 //						/** TODO: Better organize the defaults in PWData **/
 //						catch (AngoraSettingNotFoundException&)
@@ -170,32 +182,38 @@ void read_tfsf(Ctfsf &TFSF, const Config& fdtdconfig, const Config& validsetting
 						double pw_origin_x,pw_origin_y,pw_origin_z;
 //						try{
 							if (read_optional_length_from_group<double>(PWsettings,"pw_origin_x",pw_origin_x,given_in_meters))
-							if (given_in_meters)
 							{
-								PWData.PWOriginX = pw_origin_x/dx + OriginX;  //these are grid cell indices, not coordinates
-							}
-							else
-							{
-								PWData.PWOriginX = pw_origin_x + OriginX;  //these are grid cell indices, not coordinates
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    PWData.PWOriginX = pw_origin_x/dx + OriginX;  //these are grid cell indices, not coordinates
+                                                            }
+                                                            else
+                                                            {
+                                                                    PWData.PWOriginX = pw_origin_x + OriginX;  //these are grid cell indices, not coordinates
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(PWsettings,"pw_origin_y",pw_origin_y,given_in_meters))
-							if (given_in_meters)
 							{
-								PWData.PWOriginY = pw_origin_y/dx + OriginY;  //these are grid cell indices, not coordinates
-							}
-							else
-							{
-								PWData.PWOriginY = pw_origin_y + OriginY;  //these are grid cell indices, not coordinates
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    PWData.PWOriginY = pw_origin_y/dx + OriginY;  //these are grid cell indices, not coordinates
+                                                            }
+                                                            else
+                                                            {
+                                                                    PWData.PWOriginY = pw_origin_y + OriginY;  //these are grid cell indices, not coordinates
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(PWsettings,"pw_origin_z",pw_origin_z,given_in_meters))
-							if (given_in_meters)
 							{
-								PWData.PWOriginZ = pw_origin_z/dx + OriginZ;  //these are grid cell indices, not coordinates
-							}
-							else
-							{
-								PWData.PWOriginZ = pw_origin_z + OriginZ;  //these are grid cell indices, not coordinates
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    PWData.PWOriginZ = pw_origin_z/dx + OriginZ;  //these are grid cell indices, not coordinates
+                                                            }
+                                                            else
+                                                            {
+                                                                    PWData.PWOriginZ = pw_origin_z + OriginZ;  //these are grid cell indices, not coordinates
+                                                            }
+                                                        }
 //						}
 //						/** TODO: Better organize the defaults in PWDataType **/
 //						catch (AngoraSettingNotFoundException&)
@@ -279,59 +297,71 @@ void read_tfsf(Ctfsf &TFSF, const Config& fdtdconfig, const Config& validsetting
 						bool given_in_meters;
 //						try{
 							if (read_optional_length_from_group<double>(FLBsettings,"tfsf_back_margin_x",tfsf_back_margin_x,given_in_meters))
-							if (given_in_meters)
 							{
-								FLBData.FLBMarginBackX = (int)round(tfsf_back_margin_x/dx);
-							}
-							else
-							{
-								FLBData.FLBMarginBackX = (int)round(tfsf_back_margin_x);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    FLBData.FLBMarginBackX = (int)round(tfsf_back_margin_x/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    FLBData.FLBMarginBackX = (int)round(tfsf_back_margin_x);
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(FLBsettings,"tfsf_front_margin_x",tfsf_front_margin_x,given_in_meters))
-							if (given_in_meters)
 							{
-								FLBData.FLBMarginFrontX = (int)round(tfsf_front_margin_x/dx);
-							}
-							else
-							{
-								FLBData.FLBMarginFrontX = (int)round(tfsf_front_margin_x);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    FLBData.FLBMarginFrontX = (int)round(tfsf_front_margin_x/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    FLBData.FLBMarginFrontX = (int)round(tfsf_front_margin_x);
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(FLBsettings,"tfsf_left_margin_y",tfsf_left_margin_y,given_in_meters))
-							if (given_in_meters)
 							{
-								FLBData.FLBMarginLeftY = (int)round(tfsf_left_margin_y/dx);
-							}
-							else
-							{
-								FLBData.FLBMarginLeftY = (int)round(tfsf_left_margin_y);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    FLBData.FLBMarginLeftY = (int)round(tfsf_left_margin_y/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    FLBData.FLBMarginLeftY = (int)round(tfsf_left_margin_y);
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(FLBsettings,"tfsf_right_margin_y",tfsf_right_margin_y,given_in_meters))
-							if (given_in_meters)
 							{
-								FLBData.FLBMarginRightY = (int)round(tfsf_right_margin_y/dx);
-							}
-							else
-							{
-								FLBData.FLBMarginRightY = (int)round(tfsf_right_margin_y);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    FLBData.FLBMarginRightY = (int)round(tfsf_right_margin_y/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    FLBData.FLBMarginRightY = (int)round(tfsf_right_margin_y);
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(FLBsettings,"tfsf_lower_margin_z",tfsf_lower_margin_z,given_in_meters))
-							if (given_in_meters)
 							{
-								FLBData.FLBMarginLowerZ = (int)round(tfsf_lower_margin_z/dx);
-							}
-							else
-							{
-								FLBData.FLBMarginLowerZ = (int)round(tfsf_lower_margin_z);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    FLBData.FLBMarginLowerZ = (int)round(tfsf_lower_margin_z/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    FLBData.FLBMarginLowerZ = (int)round(tfsf_lower_margin_z);
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(FLBsettings,"tfsf_upper_margin_z",tfsf_upper_margin_z,given_in_meters))
-							if (given_in_meters)
 							{
-								FLBData.FLBMarginUpperZ = (int)round(tfsf_upper_margin_z/dx);
-							}
-							else
-							{
-								FLBData.FLBMarginUpperZ = (int)round(tfsf_upper_margin_z);
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    FLBData.FLBMarginUpperZ = (int)round(tfsf_upper_margin_z/dx);
+                                                            }
+                                                            else
+                                                            {
+                                                                    FLBData.FLBMarginUpperZ = (int)round(tfsf_upper_margin_z);
+                                                            }
+                                                        }
 //						}
 //						/** TODO: Better organize the defaults in FLBData **/
 //						catch (AngoraSettingNotFoundException&)
@@ -341,32 +371,38 @@ void read_tfsf(Ctfsf &TFSF, const Config& fdtdconfig, const Config& validsetting
 						double flb_origin_x,flb_origin_y,flb_origin_z;
 //						try{
 							if (read_optional_length_from_group<double>(FLBsettings,"flb_origin_x",flb_origin_x,given_in_meters))
-							if (given_in_meters)
 							{
-								FLBData.FLBOriginX = flb_origin_x/dx + OriginX;  //these are grid cell indices, not coordinates
-							}
-							else
-							{
-								FLBData.FLBOriginX = flb_origin_x + OriginX;  //these are grid cell indices, not coordinates
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    FLBData.FLBOriginX = flb_origin_x/dx + OriginX;  //these are grid cell indices, not coordinates
+                                                            }
+                                                            else
+                                                            {
+                                                                    FLBData.FLBOriginX = flb_origin_x + OriginX;  //these are grid cell indices, not coordinates
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(FLBsettings,"flb_origin_y",flb_origin_y,given_in_meters))
-							if (given_in_meters)
 							{
-								FLBData.FLBOriginY = flb_origin_y/dx + OriginY;  //these are grid cell indices, not coordinates
-							}
-							else
-							{
-								FLBData.FLBOriginY = flb_origin_y + OriginY;  //these are grid cell indices, not coordinates
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    FLBData.FLBOriginY = flb_origin_y/dx + OriginY;  //these are grid cell indices, not coordinates
+                                                            }
+                                                            else
+                                                            {
+                                                                    FLBData.FLBOriginY = flb_origin_y + OriginY;  //these are grid cell indices, not coordinates
+                                                            }
+                                                        }
 							if (read_optional_length_from_group<double>(FLBsettings,"flb_origin_z",flb_origin_z,given_in_meters))
-							if (given_in_meters)
 							{
-								FLBData.FLBOriginZ = flb_origin_z/dx + OriginZ;  //these are grid cell indices, not coordinates
-							}
-							else
-							{
-								FLBData.FLBOriginZ = flb_origin_z + OriginZ;  //these are grid cell indices, not coordinates
-							}
+                                                            if (given_in_meters)
+                                                            {
+                                                                    FLBData.FLBOriginZ = flb_origin_z/dx + OriginZ;  //these are grid cell indices, not coordinates
+                                                            }
+                                                            else
+                                                            {
+                                                                    FLBData.FLBOriginZ = flb_origin_z + OriginZ;  //these are grid cell indices, not coordinates
+                                                            }
+                                                        }
 //						}
 //						/** TODO: Better organize the defaults in FLBDataType **/
 //						catch (AngoraSettingNotFoundException&)

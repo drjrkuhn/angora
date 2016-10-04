@@ -152,6 +152,8 @@ bool Cplanarlayer::IsInside(const double& x, const double& y, const double& z) c
 		return (lessThanOrEqual(z,grid_max_coord_in_cells,double_eps)
 			  &&greaterThanOrEqual(z,grid_min_coord_in_cells,double_eps));
 	}
+        assert(0); // never reached
+        return false;
 }
 
 bool Cplanarlayer::IsAtBoundary(const double& x, const double& y, const double& z, const double& dx) const
@@ -177,6 +179,8 @@ bool Cplanarlayer::IsAtBoundary(const double& x, const double& y, const double& 
 			   ||(lessThanOrEqual(z-0.5,grid_min_coord_in_cells,double_eps)
 			      &&greaterThanOrEqual(z+0.5,grid_min_coord_in_cells,double_eps)));
 	}
+        assert(0); // never reached
+        return false;
 }
 
 double Cplanarlayer::ratio_of_voxel_inside_volume(const double& x, const double& y, const double& z, const double& dx) const
@@ -247,6 +251,8 @@ double Cplanarlayer::ratio_of_voxel_inside_volume(const double& x, const double&
 			return 0;
 		}
 	}
+        assert(0); // never reached
+        return 0;
 }
 
 int Cplanarlayer::bounding_box_back_cell() const
@@ -263,6 +269,8 @@ int Cplanarlayer::bounding_box_back_cell() const
 	{
 		return 1;
 	}
+        assert(0); // never reached
+        return 0;
 }
 
 int Cplanarlayer::bounding_box_front_cell() const
@@ -279,6 +287,8 @@ int Cplanarlayer::bounding_box_front_cell() const
 	{
 		return NCELLS_X+2*NPML;
 	}
+        assert(0); // never reached
+        return 0;
 }
 
 int Cplanarlayer::bounding_box_left_cell() const
@@ -295,6 +305,8 @@ int Cplanarlayer::bounding_box_left_cell() const
 	{
 		return 1;
 	}
+        assert(0); // never reached
+        return 0;
 }
 
 int Cplanarlayer::bounding_box_right_cell() const
@@ -311,6 +323,8 @@ int Cplanarlayer::bounding_box_right_cell() const
 	{
 		return NCELLS_Y+2*NPML;
 	}
+        assert(0); // never reached
+        return 0;
 }
 
 int Cplanarlayer::bounding_box_lower_cell() const
@@ -327,6 +341,8 @@ int Cplanarlayer::bounding_box_lower_cell() const
 	{
 		return (int)ceil(grid_min_coord_in_cells);
 	}
+        assert(0); // never reached
+        return 0;
 }
 
 int Cplanarlayer::bounding_box_upper_cell() const
@@ -343,6 +359,8 @@ int Cplanarlayer::bounding_box_upper_cell() const
 	{
 		return (int)ceil(grid_max_coord_in_cells);
 	}
+        assert(0); // never reached
+        return 0;
 }
 
 /********************/

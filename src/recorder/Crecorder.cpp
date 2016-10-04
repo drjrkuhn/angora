@@ -34,7 +34,7 @@ Copyright (C) 2006-2012  Ilker R. Capoglu
 #endif
 
 
-int Crecorder::AddMovieRecorder(const string& mysection, const int& Pos,
+void Crecorder::AddMovieRecorder(const string& mysection, const int& Pos,
 				const string& mycomponent, const string& myscale, const string& myrecordingtype, const string& MovieFileName,
 				const bool& OnlyRecordsGeometry)
 {//adds a movie recorder to the recorder container
@@ -42,14 +42,14 @@ int Crecorder::AddMovieRecorder(const string& mysection, const int& Pos,
 	MovieRecorders.push_back(new_movie_recorder_ptr);
 }
 
-int Crecorder::AddLineRecorder(const string& myorientation, const int& x1Pos, const int& x2Pos,
+void Crecorder::AddLineRecorder(const string& myorientation, const int& x1Pos, const int& x2Pos,
 				const string& mycomponent, const string& myscale, const string& LineFileName)
 {//adds a line recorder to the recorder container
 	boost::shared_ptr<Crec> new_line_recorder_ptr(new Crecorder_line(myorientation, x1Pos, x2Pos, mycomponent, myscale, LineFileName, LineRecorders.size()));
 	LineRecorders.push_back(new_line_recorder_ptr);
 }
 
-int Crecorder::AddFieldValueRecorder(const int& xPos, const int& yPos, const int& zPos,
+void Crecorder::AddFieldValueRecorder(const int& xPos, const int& yPos, const int& zPos,
 				const string& mycomponent, const string& myscale, const string& FieldValueFileName)
 {//adds a field value recorder to the recorder container
 	boost::shared_ptr<Crec> new_fieldvalue_recorder_ptr(new Crecorder_fieldvalue(xPos, yPos, zPos, mycomponent, myscale, FieldValueFileName, FieldValueRecorders.size()));

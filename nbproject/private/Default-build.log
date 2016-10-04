@@ -1,0 +1,10 @@
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  all-recursive
+Making all in src
+Making all in main
+/bin/sh ../../libtool  --tag=CXX   --mode=compile h5c++ -DHAVE_CONFIG_H -I. -I../..  -I/include -I/include -I../../src   -g3 -gdwarf-2 -MT init.lo -MD -MP -MF .deps/init.Tpo -c -o init.lo init.cpp
+libtool: compile:  h5c++ -DHAVE_CONFIG_H -I. -I../.. -I/include -I/include -I../../src -g3 -gdwarf-2 -MT init.lo -MD -MP -MF .deps/init.Tpo -c init.cpp  -fno-common -DPIC -o .libs/init.o
+../../libtool: line 1760: h5c++: command not found
+make[3]: *** [init.lo] Error 1
+make[2]: *** [all-recursive] Error 1
+make[1]: *** [all-recursive] Error 1
+make: *** [all] Error 2

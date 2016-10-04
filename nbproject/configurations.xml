@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="matlab">
+        <in>angora_fieldvalue.m</in>
+        <in>angora_line.m</in>
+        <in>angora_movie.m</in>
+        <in>hdf5_exists.m</in>
+        <in>hdf5_read.m</in>
+        <in>mod_gaussian_wf.m</in>
+      </df>
+      <df name="src">
+        <df name="absorb">
+          <in>CPML.cpp</in>
+          <in>CPML.h</in>
+          <in>Cabsorb.cpp</in>
+          <in>Cabsorb.h</in>
+        </df>
+        <df name="config">
+          <in>cfg_utils.cpp</in>
+          <in>cfg_utils.h</in>
+          <in>createcfg.cpp</in>
+          <in>valid_settings.cpp</in>
+          <in>valid_settings.h</in>
+        </df>
+        <df name="estimator">
+          <in>Cestimator.cpp</in>
+          <in>Cestimator.h</in>
+          <in>read_logging_data.cpp</in>
+          <in>read_logging_data.h</in>
+        </df>
+        <df name="fft">
+          <df name="kiss_D_fft">
+            <in>_kiss_D_fft_guts.h</in>
+            <in>kiss_D_fft.c</in>
+            <in>kiss_D_fft.h</in>
+            <in>kiss_D_fftnd.c</in>
+            <in>kiss_D_fftnd.h</in>
+            <in>kiss_D_fftndr.c</in>
+            <in>kiss_D_fftndr.h</in>
+            <in>kiss_D_fftr.c</in>
+            <in>kiss_D_fftr.h</in>
+          </df>
+          <df name="kiss_F_fft">
+            <in>_kiss_F_fft_guts.h</in>
+            <in>kiss_F_fft.c</in>
+            <in>kiss_F_fft.h</in>
+            <in>kiss_F_fftnd.c</in>
+            <in>kiss_F_fftnd.h</in>
+            <in>kiss_F_fftndr.c</in>
+            <in>kiss_F_fftndr.h</in>
+            <in>kiss_F_fftr.c</in>
+            <in>kiss_F_fftr.h</in>
+          </df>
+          <in>fft.h</in>
+          <in>fft_d.cpp</in>
+          <in>fft_f.cpp</in>
+        </df>
+        <df name="imaging">
+          <in>Cimg.cpp</in>
+          <in>Cimg.h</in>
+          <in>Cimg_pp.cpp</in>
+          <in>Cimgs.cpp</in>
+          <in>Cimgs.h</in>
+          <in>read_imaging.cpp</in>
+          <in>read_imaging.h</in>
+        </df>
+        <df name="main">
+          <in>init.cpp</in>
+          <in>init.h</in>
+          <in>initgeom.cpp</in>
+          <in>initgeom.h</in>
+          <in>matfile.h</in>
+          <in>parallel.cpp</in>
+          <in>parallel.h</in>
+          <in>place_obj.cpp</in>
+          <in>place_obj.h</in>
+          <in>placegeom.cpp</in>
+          <in>placegeom.h</in>
+          <in>random.h</in>
+          <in>read_basedirs.cpp</in>
+          <in>read_basedirs.h</in>
+          <in>read_geom.cpp</in>
+          <in>read_geom.h</in>
+          <in>read_global.cpp</in>
+          <in>read_global.h</in>
+          <in>read_multgridinfo.cpp</in>
+          <in>read_multgridinfo.h</in>
+        </df>
+        <df name="material">
+          <in>Cmat.cpp</in>
+          <in>Cmat.h</in>
+          <in>Cmat_excp.h</in>
+          <in>Cmat_types.h</in>
+          <in>Cmats.cpp</in>
+          <in>Cmats.h</in>
+          <in>Cmats_excp.h</in>
+          <in>read_mat.cpp</in>
+          <in>read_mat.h</in>
+        </df>
+        <df name="nffft">
+          <df name="pd">
+            <in>Cnffft_pd.cpp</in>
+            <in>Cnffft_pd.h</in>
+            <in>Ctr_pd.cpp</in>
+            <in>Ctr_pd.h</in>
+            <in>Ctr_pd_2l.cpp</in>
+            <in>Ctr_pd_2l.h</in>
+            <in>Ctr_pd_2l_TL.cpp</in>
+            <in>Ctr_pd_2l_pp.cpp</in>
+            <in>Ctr_pd_3l.cpp</in>
+            <in>Ctr_pd_3l.h</in>
+            <in>Ctr_pd_3l_TL.cpp</in>
+            <in>Ctr_pd_3l_pp.cpp</in>
+            <in>Ctr_pd_fs.cpp</in>
+            <in>Ctr_pd_fs.h</in>
+            <in>Ctr_pd_fs_pp.cpp</in>
+            <in>Ctr_pd_ml.cpp</in>
+            <in>Ctr_pd_ml.h</in>
+            <in>Ctr_pd_ml_TL.cpp</in>
+            <in>Ctr_pd_ml_pp.cpp</in>
+            <in>Ctr_pd_pp.cpp</in>
+            <in>Ctr_pd_upd.cpp</in>
+          </df>
+          <df name="td">
+            <in>Cnffft_td.cpp</in>
+            <in>Cnffft_td.h</in>
+            <in>Ctr_td.cpp</in>
+            <in>Ctr_td.h</in>
+            <in>Ctr_td_3l.cpp</in>
+            <in>Ctr_td_3l.h</in>
+            <in>Ctr_td_3l_TL.cpp</in>
+            <in>Ctr_td_3l_pp.cpp</in>
+            <in>Ctr_td_3l_upd.cpp</in>
+            <in>Ctr_td_fs.cpp</in>
+            <in>Ctr_td_fs.h</in>
+            <in>Ctr_td_fs_pp.cpp</in>
+            <in>Ctr_td_fs_upd.cpp</in>
+          </df>
+          <in>read_nffft_pd.cpp</in>
+          <in>read_nffft_pd.h</in>
+          <in>read_nffft_td.cpp</in>
+          <in>read_nffft_td.h</in>
+        </df>
+        <df name="pointsources">
+          <in>Cpointsources.cpp</in>
+          <in>Cpointsources.h</in>
+          <in>read_pointsources.cpp</in>
+          <in>read_pointsources.h</in>
+        </df>
+        <df name="recorder">
+          <in>Crec.h</in>
+          <in>Crecorder.cpp</in>
+          <in>Crecorder.h</in>
+          <in>Crecorder_fieldvalue.cpp</in>
+          <in>Crecorder_fieldvalue.h</in>
+          <in>Crecorder_line.cpp</in>
+          <in>Crecorder_line.h</in>
+          <in>Crecorder_movie.cpp</in>
+          <in>Crecorder_movie.h</in>
+          <in>read_recorder.cpp</in>
+          <in>read_recorder.h</in>
+        </df>
+        <df name="shape">
+          <in>Cshape.cpp</in>
+          <in>Cshape.h</in>
+          <in>Cshape_excp.h</in>
+          <in>Cshape_shared_ptr.h</in>
+          <in>Cshapes.cpp</in>
+          <in>Cshapes.h</in>
+          <in>Cshapes_excp.h</in>
+          <in>read_shapes.cpp</in>
+          <in>read_shapes.h</in>
+        </df>
+        <df name="specfun">
+          <df name="gamma">
+            <in>const.c</in>
+            <in>gamma.c</in>
+            <in>gamma.h</in>
+            <in>isnan.c</in>
+            <in>mconf.h</in>
+            <in>mtherr.c</in>
+            <in>polevl.c</in>
+          </df>
+          <df name="hermite">
+            <in>hermite.cpp</in>
+            <in>hermite.h</in>
+          </df>
+        </df>
+        <df name="tfsf">
+          <df name="evan">
+            <in>f2c.h</in>
+            <in>z_div.c</in>
+            <in>zgtsv.c</in>
+          </df>
+          <df name="glquad">
+            <in>gaussquad.cpp</in>
+            <in>gaussquad.h</in>
+          </df>
+          <in>Cflb.cpp</in>
+          <in>Cflb.h</in>
+          <in>Cpw.cpp</in>
+          <in>Cpw.h</in>
+          <in>Cpw_2l.cpp</in>
+          <in>Cpw_2l.h</in>
+          <in>Cpw_2l_inc.cpp</in>
+          <in>Cpw_fs.cpp</in>
+          <in>Cpw_fs.h</in>
+          <in>Cpw_fs_inc.cpp</in>
+          <in>Cpw_fs_upd.cpp</in>
+          <in>Cpw_ml.cpp</in>
+          <in>Cpw_ml.h</in>
+          <in>Cpw_ml_inc.cpp</in>
+          <in>Cpw_ml_upd.cpp</in>
+          <in>Ctfsf.cpp</in>
+          <in>Ctfsf.h</in>
+          <in>cubature.cc</in>
+          <in>read_tfsf.cpp</in>
+          <in>read_tfsf.h</in>
+        </df>
+        <df name="update">
+          <in>update.cpp</in>
+          <in>update.h</in>
+          <in>update_full.cpp</in>
+          <in>update_full.h</in>
+          <in>update_no_dispersion.cpp</in>
+          <in>update_no_dispersion.h</in>
+        </df>
+        <df name="waveforms">
+          <in>Cwf.h</in>
+          <in>Cwf_excp.h</in>
+          <in>Cwf_gauss.cpp</in>
+          <in>Cwf_gauss.h</in>
+          <in>Cwf_shared_ptr.h</in>
+          <in>Cwfs.cpp</in>
+          <in>Cwfs.h</in>
+          <in>Cwfs_excp.h</in>
+          <in>read_wfs.cpp</in>
+          <in>read_wfs.h</in>
+        </df>
+        <in>angora.cpp</in>
+        <in>angora_excp.h</in>
+        <in>check_dispersion.cpp</in>
+        <in>check_dispersion.h</in>
+        <in>constants.h</in>
+        <in>float_comp.h</in>
+        <in>globals.cpp</in>
+        <in>globals.h</in>
+        <in>headers.h</in>
+        <in>path_utils.cpp</in>
+        <in>path_utils.h</in>
+        <in>time_axis.cpp</in>
+        <in>time_axis.h</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>configure</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>CLang|CLang</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} CXX="clang++" CPLUS_INCLUDE_PATH="/usr/local/include" LIBRARY_PATH="/usr/local/lib" LIBS="-largp -lhdf5 -lhdf5_cpp -lconfig++" -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>/usr/local/include</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand>./configure CC=${IDE_CC} CXX=${IDE_CXX} CFLAGS="-g3 -gdwarf-2" CXXFLAGS="-g3 -gdwarf-2" HDF5_CXX="g++" HDF5_CLINKER="g++"</preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="matlab/angora_fieldvalue.m" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="matlab/angora_line.m" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="matlab/angora_movie.m" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="matlab/hdf5_exists.m" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="matlab/hdf5_read.m" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="matlab/mod_gaussian_wf.m" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/absorb/CPML.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/absorb/CPML.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/absorb/Cabsorb.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/absorb/Cabsorb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/angora.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/angora_excp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/check_dispersion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/check_dispersion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/config/cfg_utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/config/cfg_utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/config/createcfg.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/config/valid_settings.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/config/valid_settings.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/constants.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/estimator/Cestimator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/estimator/Cestimator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/estimator/read_logging_data.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/estimator/read_logging_data.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/fft/fft.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/fft/fft_d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/fft/fft_f.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_D_fft/_kiss_D_fft_guts.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/fft/kiss_D_fft/kiss_D_fft.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_D_fft/kiss_D_fft.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_D_fft/kiss_D_fftnd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_D_fft/kiss_D_fftnd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_D_fft/kiss_D_fftndr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_D_fft/kiss_D_fftndr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_D_fft/kiss_D_fftr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_D_fft/kiss_D_fftr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_F_fft/_kiss_F_fft_guts.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/fft/kiss_F_fft/kiss_F_fft.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_F_fft/kiss_F_fft.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_F_fft/kiss_F_fftnd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_F_fft/kiss_F_fftnd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_F_fft/kiss_F_fftndr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_F_fft/kiss_F_fftndr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_F_fft/kiss_F_fftr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/fft/kiss_F_fft/kiss_F_fftr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/float_comp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/globals.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/globals.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/headers.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/imaging/Cimg.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/imaging/Cimg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/imaging/Cimg_pp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/imaging/Cimgs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/imaging/Cimgs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/imaging/read_imaging.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/imaging/read_imaging.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/init.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main/init.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/initgeom.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main/initgeom.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/matfile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/parallel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main/parallel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/place_obj.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main/place_obj.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/placegeom.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main/placegeom.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/random.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/read_basedirs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main/read_basedirs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/read_geom.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main/read_geom.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/read_global.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main/read_global.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main/read_multgridinfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main/read_multgridinfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/material/Cmat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/material/Cmat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/material/Cmat_excp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/material/Cmat_types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/material/Cmats.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/material/Cmats.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/material/Cmats_excp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/material/read_mat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/material/read_mat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Cnffft_pd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Cnffft_pd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_2l.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_2l.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_2l_TL.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_2l_pp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_3l.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_3l.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_3l_TL.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_3l_pp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_fs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_fs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_fs_pp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_ml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_ml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_ml_TL.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_ml_pp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_pp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/pd/Ctr_pd_upd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/read_nffft_pd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/read_nffft_pd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/read_nffft_td.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/read_nffft_td.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Cnffft_td.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Cnffft_td.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td_3l.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td_3l.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td_3l_TL.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td_3l_pp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td_3l_upd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td_fs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td_fs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td_fs_pp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/nffft/td/Ctr_td_fs_upd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/path_utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/path_utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/pointsources/Cpointsources.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/pointsources/Cpointsources.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/pointsources/read_pointsources.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/pointsources/read_pointsources.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/recorder/Crec.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/recorder/Crecorder.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/recorder/Crecorder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/recorder/Crecorder_fieldvalue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/recorder/Crecorder_fieldvalue.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/recorder/Crecorder_line.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/recorder/Crecorder_line.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/recorder/Crecorder_movie.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/recorder/Crecorder_movie.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/recorder/read_recorder.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/recorder/read_recorder.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/shape/Cshape.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/shape/Cshape.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/shape/Cshape_excp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/shape/Cshape_shared_ptr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/shape/Cshapes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/shape/Cshapes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/shape/Cshapes_excp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/shape/read_shapes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/shape/read_shapes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/specfun/gamma/const.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/specfun/gamma/gamma.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/specfun/gamma/gamma.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/specfun/gamma/isnan.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/specfun/gamma/mconf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/specfun/gamma/mtherr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/specfun/gamma/polevl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/specfun/hermite/hermite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/specfun/hermite/hermite.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cflb.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cflb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_2l.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_2l.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_2l_inc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_fs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_fs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_fs_inc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_fs_upd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_ml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_ml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_ml_inc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Cpw_ml_upd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Ctfsf.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/Ctfsf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tfsf/cubature.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/evan/f2c.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tfsf/evan/z_div.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/tfsf/evan/zgtsv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/tfsf/glquad/gaussquad.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/glquad/gaussquad.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/tfsf/read_tfsf.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tfsf/read_tfsf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/time_axis.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/time_axis.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/update/update.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/update/update.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/update/update_full.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/update/update_full.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/update/update_no_dispersion.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/update/update_no_dispersion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/waveforms/Cwf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/waveforms/Cwf_excp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/waveforms/Cwf_gauss.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/waveforms/Cwf_gauss.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/waveforms/Cwf_shared_ptr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/waveforms/Cwfs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/waveforms/Cwfs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/waveforms/Cwfs_excp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/waveforms/read_wfs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/waveforms/read_wfs.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

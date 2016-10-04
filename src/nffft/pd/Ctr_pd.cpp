@@ -575,6 +575,8 @@ double Ctr_pd::THETA(const int& l, const int& d1, const int& d2)
             }
         }
     }
+    assert(0); // never reached
+    return 0;
 }
 
 double Ctr_pd::PHI(const int& l, const int& d1, const int& d2)

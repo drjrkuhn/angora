@@ -32,14 +32,17 @@ double Ctr_td_fs::TheoreticalFarFieldTheta(const int& n)
 //Theoretical theta-component of the radiated E-field due to a collection of electric dipoles (for which data is given in
 // *PointSourcesPtr)
 {
+    return 0;
 }
 
 double Ctr_td_fs::TheoreticalFarFieldPhi(const int& n)
 //Theoretical phi-component of the radiated E-field due to a collection of electric dipoles (for which data is given in
 // *PointSourcesPtr)
 {
+    return 0;
 }
 
 double Ctr_td_fs::TheoreticalFarFieldWaveform(double t, double tau)
 {//Return the appropriate far-field waveform shape (normalized), depending on the source current waveform
+    return 0;
 }

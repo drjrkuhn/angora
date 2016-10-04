@@ -28,7 +28,7 @@ Copyright (C) 2006-2012  Ilker R. Capoglu
 extern int rank;
 
 
-int Cimgs::AddOpticalImage(const ImgDataType& MyData, const string& ImgFileName)
+void Cimgs::AddOpticalImage(const ImgDataType& MyData, const string& ImgFileName)
 {
 	boost::shared_ptr<Cimg> new_image_ptr(new Cimg(MyData,ImgFileName,Images.size()));
 	Images.push_back(new_image_ptr);
